@@ -1,158 +1,162 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUMINA NEON | ניאון מעוצב אישי</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background: #0f1419; color: #e0e0e0; direction: rtl; }
-    .header { position: sticky; top: 0; background: rgba(15,20,25,0.95); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,20,147,0.2); z-index: 50; }
-    .logo { font-size: 24px; font-weight: bold; color: #ff1493; text-shadow: 0 0 10px rgba(255,20,147,0.8); letter-spacing: 2px; cursor: pointer; }
-    .whatsapp-btn { background: #25D366; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s; box-shadow: 0 0 20px rgba(37,211,102,0.4); }
-    .whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 0 30px rgba(37,211,102,0.8); }
-    .hero { background: linear-gradient(135deg, rgba(15,20,25,0.9) 0%, rgba(25,35,55,0.9) 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; text-align: center; }
-    .hero-content { max-width: 700px; }
-    .hero-img { max-width: 300px; margin: 0 auto 30px; border: 2px solid #ff1493; border-radius: 15px; overflow: hidden; animation: float 3s ease-in-out infinite; }
-    .hero-img img { width: 100%; height: auto; display: block; }
-    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
-    h1 { font-size: 48px; margin: 20px 0; color: #ff1493; text-shadow: 0 0 10px rgba(255,20,147,0.8); line-height: 1.3; letter-spacing: 1.5px; font-weight: 700; }
-    h2 { font-size: 24px; color: #00ffff; margin: 15px 0 30px; text-shadow: 0 0 10px rgba(0,255,255,0.6); font-weight: 600; letter-spacing: 0.8px; }
-    .subtitle { font-size: 18px; color: #aaa; margin: 20px 0; }
-    .cta { background: #ff1493; color: white; padding: 15px 40px; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 10px; text-decoration: none; display: inline-block; transition: all 0.3s; box-shadow: 0 0 20px rgba(255,20,147,0.6); }
-    .cta:hover { transform: translateY(-3px); box-shadow: 0 0 40px rgba(255,20,147,0.8); }
-    .trust { margin: 30px 0; font-size: 14px; color: #999; }
-    .section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-    .section-title { font-size: 40px; text-align: center; margin-bottom: 40px; color: #00ffff; text-shadow: 0 0 10px rgba(0,255,255,0.6); letter-spacing: 1px; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .card { background: rgba(255,20,147,0.05); border: 1px solid rgba(255,20,147,0.3); padding: 30px; border-radius: 10px; transition: all 0.3s; }
-    .card:hover { border-color: rgba(255,20,147,0.7); transform: translateY(-5px); }
-    .card h3 { color: white; margin: 15px 0; font-size: 22px; }
-    .card p { color: #aaa; line-height: 1.6; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery-item { position: relative; overflow: hidden; border-radius: 10px; border: 2px solid rgba(0,255,255,0.3); height: 300px; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-    .gallery-item:hover img { transform: scale(1.1); }
-    .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.85); color: white; padding: 15px; font-weight: bold; text-align: center; }
-    .footer { background: #0a0d10; padding: 30px 20px; text-align: center; border-top: 1px solid rgba(255,20,147,0.2); color: #999; }
-    @media (max-width: 768px) { h1 { font-size: 36px; } h2 { font-size: 20px; } .header { flex-direction: column; gap: 15px; } }
-    </style>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>LUMINA NEON | ניאון מעוצב אישי</title>
+  	<style>
+      		* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      		body { background: #0f1419; color: #e0e0e0; direction: rtl; }
+      		.header { position: sticky; top: 0; background: rgba(15,20,25,0.95); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,20,147,0.2); z-index: 50; }
+      		.logo { font-size: 24px; font-weight: bold; color: #ff1493; text-shadow: 0 0 10px rgba(255,20,147,0.8); letter-spacing: 2px; cursor: pointer; }
+      		.whatsapp-btn { background: #25D366; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s; box-shadow: 0 0 20px rgba(37,211,102,0.4); }
+      		.whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 0 30px rgba(37,211,102,0.8); }
+      		.hero { background: linear-gradient(135deg, rgba(15,20,25,0.9) 0%, rgba(25,35,55,0.9) 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; text-align: center; }
+      		.hero-content { max-width: 700px; }
+      		.hero-img { max-width: 300px; margin: 0 auto 30px; border: 2px solid #ff1493; border-radius: 15px; overflow: hidden; animation: float 3s ease-in-out infinite; }
+      		.hero-img img { width: 100%; height: auto; display: block; }
+      		@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+      		h1 { font-size: 48px; margin: 20px 0; color: #ff1493; text-shadow: 0 0 10px rgba(255,20,147,0.8); line-height: 1.3; letter-spacing: 1.5px; font-weight: 700; }
+      		h2 { font-size: 24px; color: #00ffff; margin: 15px 0 30px; text-shadow: 0 0 10px rgba(0,255,255,0.6); font-weight: 600; letter-spacing: 0.8px; }
+      		.subtitle { font-size: 18px; color: #aaa; margin: 20px 0; }
+      		.cta { background: #ff1493; color: white; padding: 15px 40px; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 10px; text-decoration: none; display: inline-block; transition: all 0.3s; box-shadow: 0 0 20px rgba(255,20,147,0.6); }
+      		.cta:hover { transform: translateY(-3px); box-shadow: 0 0 40px rgba(255,20,147,0.8); }
+      		.trust { margin: 30px 0; font-size: 14px; color: #999; }
+      		.section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+      		.section-title { font-size: 40px; text-align: center; margin-bottom: 40px; color: #00ffff; text-shadow: 0 0 10px rgba(0,255,255,0.6); letter-spacing: 1px; }
+      		.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+      		.card { background: rgba(255,20,147,0.05); border: 1px solid rgba(255,20,147,0.3); padding: 30px; border-radius: 10px; transition: all 0.3s; }
+      		.card:hover { border-color: rgba(255,20,147,0.7); transform: translateY(-5px); }
+      		.card h3 { color: white; margin: 15px 0; font-size: 22px; }
+      		.card p { color: #aaa; line-height: 1.6; }
+      		.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+      		.gallery-item { position: relative; overflow: hidden; border-radius: 10px; border: 2px solid rgba(0,255,255,0.3); height: 300px; }
+      		.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+      		.gallery-item:hover img { transform: scale(1.1); }
+      		.gallery-label { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.85); color: white; padding: 15px; font-weight: bold; text-align: center; }
+      		.footer { background: #0a0d10; padding: 30px 20px; text-align: center; border-top: 1px solid rgba(255,20,147,0.2); color: #999; }
+      		@media (max-width: 768px) {
+            			h1 { font-size: 36px; }
+            			h2 { font-size: 20px; }
+            			.header { flex-direction: column; gap: 15px; }
+          }
+      	</style>
   </head>
   <body>
-    <div class="header">
-      <div class="logo">LUMINA</div>div>
-      <a href="https://wa.me/972544242427?text=שלום!%20אני%20מעוניין%20לניאון%20מעוצב%20אישי" class="whatsapp-btn">📱 WhatsApp</a>a>
-    </div>div>
-
-    <div class="hero">
-      <div class="hero-content">
-        <div class="hero-img">
-          <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/neon-street-sign.jpg" alt="neon sign">
-        </div>div>
-        <h1>הפכו את החלל שלכם למחשמל בניאון ✨</h1>
-      <h2>עיצוב אישי • איכות פרמיום • משלוח מהיר</h2>
-      <p class="subtitle">קבלו סקיצה חינם עוד היום!</p>p>
-      <a href="https://wa.me/972544242427?text=שלום!%20אני%20מעוניין%20ברעיון%20לניאון%20מעוצב%20אישי" class="cta">קבלו הצעה בוואטסאפ 💬</a>a>
-      <div class="trust">⭐ 500+ לקוחות מרוצים בישראל | ⚡ משלוח 5-7 ימים</div>div>
+    	<div class="header">
+        		<div class="logo">LUMINA</div>div>
+        		<a href="https://wa.me/972544242427?text=שלום!%20אני%20מעוניין%20לניאון%20מעוצב%20אישי" class="whatsapp-btn">📱 WhatsApp</a>a>
       </div>div>
+
+    	<div class="hero">
+        		<div class="hero-content">
+              			<div class="hero-img">
+                      				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/neon-street-sign.jpg" alt="neon sign">
+                    </div>div>
+              			<h1>הפכו את החלל שלכם למחשמל בניאון ✨</h1>
+            			<h2>עיצוב אישי • איכות פרמיום • משלוח מהיר</h2>
+            			<p class="subtitle">קבלו סקיצה חינם עוד היום!</p>p>
+            			<a href="https://wa.me/972544242427?text=שלום!%20אני%20מעוניין%20ברעיון%20לניאון%20מעוצב%20אישי" class="cta">קבלו הצעה בוואטסאפ 💬</a>a>
+            			<div class="trust">⭐ 500+ לקוחות מרוצים בישראל | ⚡ משלוח 5-7 ימים</div>div>
+            </div>div>
+      </div>div>
+  
+  	<div class="section" style="background: rgba(25,35,55,0.3);">
+    		<h2 class="section-title">למה בחרו בנו?</h2>
+    		<div class="cards">
+        			<div class="card">
+              				<h3>⚡ מוכן תוך ימים</h3>
+              				<p>לא שבועות וחודשים. ייצור מקומי בתל אביב ומשלוח מהיר לכל הארץ.</p>
+              </div>div>
+        			<div class="card">
+              				<h3>✨ איכות פרמיום</h3>
+              				<p>עמיד 10+ שנים, חסכוני בחשמל, בטוח לשימוש עם תעודות בטיחות.</p>
+              </div>div>
+        			<div class="card">
+              				<h3>🎨 התאמה מלאה</h3>
+              				<p>כל פונט, כל צבע, כל לוגו. תנו לנו רעיון ואנחנו נהפכו אותו למציאות.</p>
+              </div>div>
+        </div>div>
     </div>div>
   
-  <div class="section" style="background: rgba(25,35,55,0.3);">
-  <h2 class="section-title">למה בחרו בנו?</h2>
-  <div class="cards">
-  <div class="card">
-  <h3>⚡ מוכן תוך ימים</h3>
-  <p>לא שבועות וחודשים. ייצור מקומי בתל אביב ומשלוח מהיר לכל הארץ.</p>
-  </div>div>
-  <div class="card">
-  <h3>✨ איכות פרמיום</h3>
-  <p>עמיד 10+ שנים, חסכוני בחשמל, בטוח לשימוש עם תעודות בטיחות.</p>
-  </div>div>
-  <div class="card">
-  <h3>🎨 התאמה מלאה</h3>
-  <p>כל פונט, כל צבע, כל לוגו. תנו לנו רעיון ואנחנו נהפכו אותו למציאות.</p>
-  </div>div>
-  </div>div>
-  </div>div>
+  	<div class="section">
+    		<h2 class="section-title">העבודות שלנו</h2>
+    		<div class="gallery">
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/lumina-storefront.jpg" alt="LUMINA Storefront">
+              				<div class="gallery-label">חנות LUMINA יוקרה</div>div>
+              </div>div>
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/july-lounge.jpg" alt="July Lounge">
+              				<div class="gallery-label">July Lounge ניאון</div>div>
+              </div>div>
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/behind-chair.jpg" alt="Behind The Chair Institute">
+              				<div class="gallery-label">Behind The Chair Institute</div>div>
+              </div>div>
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/roasted-bean.jpg" alt="The Roasted Bean">
+              				<div class="gallery-label">The Roasted Bean Coffee</div>div>
+              </div>div>
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/pilates-studio-1.jpg" alt="Pilates Studio">
+              				<div class="gallery-label">סטודיו פילאטס מודרני</div>div>
+              </div>div>
+        			<div class="gallery-item">
+              				<img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/pilates-studio-paris.jpg" alt="Paris Pilates">
+              				<div class="gallery-label">Paris Pilates Studio</div>div>
+              </div>div>
+        </div>div>
+    </div>div>
   
-  <div class="section">
-  <h2 class="section-title">העבודות שלנו</h2>
-  <div class="gallery">
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/lumina-storefront.jpg" alt="LUMINA Storefront">
-  <div class="gallery-label">חנות LUMINA יוקרה</div>div>
-  </div>div>
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/july-lounge.jpg" alt="July Lounge">
-  <div class="gallery-label">July Lounge ניאון</div>div>
-  </div>div>
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/behind-chair.jpg" alt="Behind The Chair Institute">
-  <div class="gallery-label">Behind The Chair Institute</div>div>
-  </div>div>
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/roasted-bean.jpg" alt="The Roasted Bean">
-  <div class="gallery-label">The Roasted Bean Coffee</div>div>
-  </div>div>
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/pilates-studio-1.jpg" alt="Pilates Studio">
-  <div class="gallery-label">סטודיו פילאטס מודרני</div>div>
-  </div>div>
-  <div class="gallery-item">
-  <img src="https://raw.githubusercontent.com/adamrozichner-star/lumina-neon-landing/main/pilates-studio-paris.jpg" alt="Paris Pilates">
-  <div class="gallery-label">Paris Pilates Studio</div>div>
-  </div>div>
-  </div>div>
-  </div>div>
+  	<div class="section" style="background: rgba(25,35,55,0.3);">
+    		<h2 class="section-title">תהליך בשלוש פעימות ❤️</h2>
+    		<div class="cards">
+        			<div class="card">
+              				<h3>1️⃣ שלחו רעיון</h3>
+              				<p>שלחו לנו תמונה של לוגו, טקסט או רעיון בוואטסאפ</p>
+              </div>div>
+        			<div class="card">
+              				<h3>2️⃣ סקיצה חינם</h3>
+              				<p>אנחנו שולחים סקיצה ידנית, הדמיה 3D וקביעת מחיר</p>
+              </div>div>
+        			<div class="card">
+              				<h3>3️⃣ ייצור + משלוח</h3>
+              				<p>אחרי אישור אנחנו מייצרים ושולחים אליכם!</p>
+              </div>div>
+        </div>div>
+    </div>div>
   
-  <div class="section" style="background: rgba(25,35,55,0.3);">
-  <h2 class="section-title">תהליך בשלוש פעימות ❤️</h2>
-  <div class="cards">
-  <div class="card">
-  <h3>1️⃣ שלחו רעיון</h3>
-  <p>שלחו לנו תמונה של לוגו, טקסט או רעיון בוואטסאפ</p>
-  </div>div>
-  <div class="card">
-  <h3>2️⃣ סקיצה חינם</h3>
-  <p>אנחנו שולחים סקיצה ידנית, הדמיה 3D וקביעת מחיר</p>
-  </div>div>
-  <div class="card">
-  <h3>3️⃣ ייצור + משלוח</h3>
-  <p>אחרי אישור אנחנו מייצרים ושולחים אליכם!</p>
-  </div>div>
-  </div>div>
-  </div>div>
+  	<div class="section">
+    		<h2 class="section-title">שאלות נפוצות</h2>
+    		<div style="max-width: 700px; margin: 0 auto;">
+        			<div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
+              				<h4 style="color: #ff1493; margin-bottom: 10px;">💰 כמה עולה?</h4>
+              				<p style="color: #aaa;">800₪ - 3000₪ בהתאם לגודל וסיבוכיות. שלחו רעיון לקבלת הצעה מדויקת בחינם!</p>
+              </div>div>
+        			<div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
+              				<h4 style="color: #00ffff; margin-bottom: 10px;">⏱️ כמה זמן?</h4>
+              				<p style="color: #aaa;">סקיצה חינם: 24-48 שעות. סה"כ מהזמנה להשלמה: 5-7 ימים!</p>
+              </div>div>
+        			<div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
+              				<h4 style="color: #ff1493; margin-bottom: 10px;">🔌 בטוח וקל?</h4>
+              				<p style="color: #aaa;">כן! Plug and play עם חבילת התקנה. בטוח לילדים עם מתח נמוך ותעודות בטיחות.</p>
+              </div>div>
+        </div>div>
+    </div>div>
   
-  <div class="section">
-  <h2 class="section-title">שאלות נפוצות</h2>
-  <div style="max-width: 700px; margin: 0 auto;">
-  <div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
-  <h4 style="color: #ff1493; margin-bottom: 10px;">💰 כמה עולה?</h4>
-  <p style="color: #aaa;">800₪ - 3000₪ בהתאם לגודל וסיבוכיות. שלחו רעיון לקבלת הצעה מדויקת בחינם!</p>
-  </div>div>
-  <div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
-  <h4 style="color: #00ffff; margin-bottom: 10px;">⏱️ כמה זמן?</h4>
-  <p style="color: #aaa;">סקיצה חינם: 24-48 שעות. סה"כ מהזמנה להשלמה: 5-7 ימים!</p>
-  </div>div>
-  <div style="margin: 20px 0; border: 1px solid rgba(255,20,147,0.2); padding: 15px; border-radius: 8px;">
-  <h4 style="color: #ff1493; margin-bottom: 10px;">🔌 בטוח וקל?</h4>
-  <p style="color: #aaa;">כן! Plug and play עם חבילת התקנה. בטוח לילדים עם מתח נמוך ותעודות בטיחות.</p>
-  </div>div>
-  </div>div>
-  </div>div>
+  	<div class="section" style="background: linear-gradient(135deg, rgba(255,20,147,0.1) 0%, rgba(0,255,255,0.05) 100%); text-align: center;">
+    		<h2 style="font-size: 36px; color: #ff1493; margin-bottom: 20px;">מוכנים להאיר את המקום שלכם?</h2>
+    		<p style="font-size: 18px; color: #aaa; margin-bottom: 30px;">הייתם שונים עם ניאון מעוצב. 100+ פרויקטים בהצלחה בישראל!</p>
+    		<a href="https://wa.me/972544242427?text=שלום!%20אני%20מוכן%20להתחיל.%20יש%20לי%20רעיון%20לניאון%20מעוצב" class="cta" style="font-size: 18px; padding: 20px 50px;">קבלו סקיצה חינם עכשיו! 🚀</a>a>
+    </div>div>
   
-  <div class="section" style="background: linear-gradient(135deg, rgba(255,20,147,0.1) 0%, rgba(0,255,255,0.05) 100%); text-align: center;">
-  <h2 style="font-size: 36px; color: #ff1493; margin-bottom: 20px;">מוכנים להאיר את המקום שלכם?</h2>
-  <p style="font-size: 18px; color: #aaa; margin-bottom: 30px;">הייתם שונים עם ניאון מעוצב. 100+ פרויקטים בהצלחה בישראל!</p>
-  <a href="https://wa.me/972544242427?text=שלום!%20אני%20מוכן%20להתחיל.%20יש%20לי%20רעיון%20לניאון%20מעוצב" class="cta" style="font-size: 18px; padding: 20px 50px;">קבלו סקיצה חינם עכשיו! 🚀</a>a>
-  </div>div>
-  
-  <div class="footer">
-  <p>📱 054-424-2427 | 📧 hello@luminaneon.co.il</p>
-  <p style="margin-top: 15px; font-size: 12px;">© 2026 LUMINA NEON | עשוי בישראל ❤️ בתל אביב</p>
-  </div>div>
+  	<div class="footer">
+    		<p>📱 054-424-2427 | 📧 hello@luminaneon.co.il</p>
+    		<p style="margin-top: 15px; font-size: 12px;">© 2026 LUMINA NEON | עשוי בישראל ❤️ בתל אביב</p>
+    </div>div>
   </body>
 </html>html></p></p></h2></h1>
   </body>
-  </style></title>
+    </style></title>
   </head>
