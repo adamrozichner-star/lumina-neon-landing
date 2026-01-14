@@ -80,7 +80,40 @@
 
                               .header { flex-direction: column; gap: 15px; }
 
-                }
+                
+                        
+                        .hero-img { animation: float 3s ease-in-out infinite; }
+                        
+                        @keyframes float {
+                                    0%, 100% { transform: translateY(0px); }
+                                    50% { transform: translateY(-10px); }
+                        }
+
+                          .hero-img:hover { animation: none; }
+
+                          .cta { letter-spacing: 0.5px; font-weight: 600; position: relative; }
+                          .cta::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%); border-radius: 10px; opacity: 0; transition: opacity 0.3s; }
+                          .cta:hover::before { opacity: 1; }
+
+                          .section-title { letter-spacing: 1px; }
+
+                          .card { position: relative; overflow: hidden; }
+                          .card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,20,147,0.1) 0%, transparent 70%); opacity: 0; transition: opacity 0.3s; }
+                          .card:hover::before { opacity: 1; }
+
+                          .gallery-label { opacity: 0; transition: opacity 0.3s ease; }
+                          .gallery-item:hover .gallery-label { opacity: 1; background: rgba(0,0,0,0.9); }
+
+                          h1 { letter-spacing: 1.5px; font-weight: 700; }
+                          h2 { font-weight: 600; letter-spacing: 0.8px; }
+
+                          .logo { letter-spacing: 2px; transition: all 0.3s; }
+                          .logo:hover { text-shadow: 0 0 20px rgba(255,20,147,1), 0 0 40px rgba(255,20,147,0.5); }
+
+                          .whatsapp-btn { transition: all 0.3s ease; }
+                          .whatsapp-btn:hover { box-shadow: 0 0 30px rgba(37,211,102,0.8), 0 0 60px rgba(37,211,102,0.4); }
+                          
+                        }
 
             </style>
 
